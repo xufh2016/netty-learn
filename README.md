@@ -22,12 +22,77 @@
      + FloatBuffer
      + DoubleBuffer
      + CharBuffer
-   + Selector  
-      
-
-
-
-
+   + Selector选择器  
+      Selector的作用就是配合一个线程来管理多个channel，获取这些channel上发生的事件，这些channel工作再非阻塞模式下，不会让线程
+      吊死在一个channel上。社和连接数特别多，但流量低的场景。
+   + Channel通过Buffer(缓冲区)进行读写操作。read()表示读取通道数据到缓冲区，write()表示把缓冲区数据写入到通道。
+     + read()  //从Buffer中读取数据。
+     + write() //写入数据到Buffer中。
+     + map()   //把管道中部分数据或者全部数据映射成MappedByteBuffer，本质也是一个ByteBuffer。map()方法参数（读写模式，映射起始位置，数据长度）。
+     + force() //强制将此通道的元数据也写入包含该文件的存储设备。
+2. ByteBuffer的正确使用姿势  
+   1. 向buffer写入数据，例如调用channel.read(buffer)  
+   2. 调用flip()切换至读模式  
+   3. 从buffer中读取数据，例如调用buffer.get()  
+   4. 调用clear()或compact()切换至写模式  
+   5. 重复1~4步骤  
+   例如：  
+   ```java
+   import java.io.FileInputStream;
+   import java.io.IOException;
+   import java.nio.ByteBuffer;
+   import java.nio.channels.FileChannel;
+   
+   public class TestByteBuffer {
+       public static void main(String[] args) {
+           try {
+               FileChannel channel = new FileInputStream("day1-netty/data.txt").getChannel();
+               //准备缓冲区，并指定大小
+               ByteBuffer byteBuffer = ByteBuffer.allocate(5);
+               while (true) {
+                   int line = channel.read(byteBuffer);//返回值是读到的实际字节数，如果是-1表示eos，
+                   if (line == -1) {
+                       break;
+                   }
+                   //打印buffer的内容
+                   byteBuffer.flip();//切换至读模式
+                   while (byteBuffer.hasRemaining()) {
+                       byte b = byteBuffer.get();
+                       System.out.println((char) b);
+                   }
+                   //切换为写模式
+                   byteBuffer.clear();
+               }
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
+       }
+   }
+   ```
+   2.1 Buffer的常用方法  
+      + flip()：确定缓冲区数据的起始点和终止点，为输出数据做准备(即写入通道)。此时：limit = position，position = 0。
+      + clear()：缓冲区初始化，准备再次接收新数据到缓冲区。position = 0，limit = capacity。
+      + hasRemaining()：判断postion到limit之间是否还有元素。
+      + rewind()：postion设为0，则mark值无效。
+      + limit(int newLt)：设置界限值，并返回一个缓冲区，该缓冲区的界限和limit()设置的一样。
+      + get()和put()：获取元素和存放元素。使用clear()之后，无法直接使用get()获取元素，需要使用get(int index)根据索引值来获取相应元素。
+      + 可以使用allocate方法为ByteBuffer分配空间，其它的Buffer类也有该方法，allocate是在JVM中分配内存
+      + allocateDirect方法，是在OS（操作系统）中分配内存，是独立于JVM的
+      + 向buffer写入数据  
+        有两种方法  
+        + 调用channel的readfangfa
+        + 调用buffer自己的put方法
+        ```java
+        int readBytes = channel.read(buf);
+        ```
+        和  
+        ```java
+        buf.put((byte)127);
+        ```
+      + 从buffer读取数据  
+        同样有两种方法  
+        + 调用channel的write方法
+        + 调用buffer自己的get方法
 
 
 #关于协议
