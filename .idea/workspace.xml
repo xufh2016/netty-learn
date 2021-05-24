@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677a86c2-6055-4957-8274-dab6a3d7c599" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/crc/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day1-netty/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/day1-netty/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1-netty/src/test/java/com/coolfish/day1netty/Day1NettyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day1-netty/src/test/java/com/coolfish/day1netty/Day1NettyApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/day1-netty/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,12 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1074">
+              <first_editor relative-caret-position="975">
                 <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
               </first_editor>
               <second_editor />
@@ -26,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day1-netty/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="500">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -48,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/Day1NettyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="90">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -57,11 +60,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/nio/TestByteBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="432">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/crc/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day1-netty/src/test/java/com/coolfish/day1netty/Day1NettyApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -84,9 +105,12 @@
         <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/Day1NettyApplication.java" />
         <option value="$PROJECT_DIR$/day1-netty/pom.xml" />
         <option value="$PROJECT_DIR$/day1-netty/data.txt" />
-        <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/nio/TestByteBuffer.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/day1-netty/.gitignore" />
+        <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/nio/TestByteBuffer.java" />
+        <option value="$PROJECT_DIR$/day1-netty/src/test/java/com/coolfish/day1netty/Day1NettyApplicationTests.java" />
+        <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/crc/CRCCheck.java" />
+        <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/crc/App.java" />
       </list>
     </option>
   </component>
@@ -105,16 +129,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1958" />
-    <option name="y" value="39" />
+    <option name="x" value="2437" />
+    <option name="y" value="-143" />
     <option name="width" value="1551" />
-    <option name="height" value="839" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -158,17 +183,50 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="day1netty" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="day1-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="day1netty" type="462c0819:PsiDirectoryNode" />
+              <item name="crc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="day1-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="day1-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="netty-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="netty-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="day1-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="day1netty" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1621584675937" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1621820598533" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -187,7 +245,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestByteBuffer">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.coolfish.day1netty.crc.App" />
+      <module name="day1-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coolfish.day1netty.crc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CRCCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.coolfish.day1netty.crc.CRCCheck" />
+      <module name="day1-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coolfish.day1netty.crc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestByteBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.coolfish.day1netty.nio.TestByteBuffer" />
       <module name="day1-netty" />
@@ -201,6 +285,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day1NettyApplicationTests.testClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day1-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coolfish.day1netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.coolfish.day1netty" />
+      <option name="MAIN_CLASS_NAME" value="com.coolfish.day1netty.Day1NettyApplicationTests" />
+      <option name="METHOD_NAME" value="testClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day1NettyApplicationTests.testServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day1-netty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coolfish.day1netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.coolfish.day1netty" />
+      <option name="MAIN_CLASS_NAME" value="com.coolfish.day1netty.Day1NettyApplicationTests" />
+      <option name="METHOD_NAME" value="testServer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day1NettyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="day1-netty" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coolfish.day1netty.Day1NettyApplication" />
@@ -210,6 +326,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.CRCCheck" />
+        <item itemvalue="JUnit.Day1NettyApplicationTests.testClient" />
+        <item itemvalue="JUnit.Day1NettyApplicationTests.testServer" />
         <item itemvalue="Application.TestByteBuffer" />
       </list>
     </recent_temporary>
@@ -228,7 +348,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621561439688</updated>
-      <workItem from="1621561443516" duration="10320000" />
+      <workItem from="1621561443516" duration="11318000" />
+      <workItem from="1621648246866" duration="2060000" />
+      <workItem from="1621815350170" duration="3106000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1621584491074</created>
@@ -237,49 +359,79 @@
       <option name="project" value="LOCAL" />
       <updated>1621584491074</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1621584684340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621584684340</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Day1NettyApplicationTests_testClient - 2021.05.22 at 10h 10m 20s.xml">
+      <configuration name="Day1NettyApplicationTests.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day1NettyApplicationTests_testClient - 2021.05.22 at 10h 10m 36s.xml">
+      <configuration name="Day1NettyApplicationTests.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day1NettyApplicationTests_testServer - 2021.05.22 at 10h 10m 56s.xml">
+      <configuration name="Day1NettyApplicationTests.testServer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day1NettyApplicationTests_testClient - 2021.05.22 at 10h 11m 12s.xml">
+      <configuration name="Day1NettyApplicationTests.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day1NettyApplicationTests_testServer - 2021.05.22 at 10h 11m 12s.xml">
+      <configuration name="Day1NettyApplicationTests.testServer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day1NettyApplicationTests_testClient - 2021.05.22 at 10h 11m 51s.xml">
+      <configuration name="Day1NettyApplicationTests.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day1NettyApplicationTests_testClient - 2021.05.22 at 11h 21m 20s.xml">
+      <configuration name="Day1NettyApplicationTests.testClient" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10320000" />
+    <option name="totallyTimeSpent" value="16484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-151" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14785373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15023847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="MyBatis Log" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3243243" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14467409" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="MyBatis Log" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,10 +452,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/Day1NettyApplication.java">
+    <entry file="file://$PROJECT_DIR$/day1-netty/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="500">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="975">
+            <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -315,30 +477,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/Day1NettyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/nio/TestByteBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="34" />
+        <state relative-caret-position="432">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1074">
-            <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/day1-netty/src/test/java/com/coolfish/day1netty/Day1NettyApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day1-netty/.gitignore">
+    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/crc/CRCCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="25">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/crc/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
