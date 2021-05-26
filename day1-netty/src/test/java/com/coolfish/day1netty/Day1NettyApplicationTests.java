@@ -45,4 +45,9 @@ class Day1NettyApplicationTests {
         socketChannel.close();
     }
 
+    @Test
+    public void test(){
+        System.out.println("be5689632589aaef".length());
+    }
+
 }

@@ -28,10 +28,41 @@ public class App
         }
         return crcstr;
     }
+    /**
+     *
+     * @param src	数据
+     * @param len	数据长度
+     * @return
+     */
+    public static String crc16(String src, int len) {
+        int crc = 0x0000FFFF;
+        short tc;
+        char sbit;
+        for (int i = 0; i < len; i++) {
+            tc = (short) (crc >>> 8);
+            crc = ((tc ^ src.charAt(i)) & 0x00FF);
+            for (int r = 0; r < 8; r++) {
+                sbit = (char) (crc & 0x01);
+                crc >>>= 1;
+                if (sbit != 0)
+                    crc = (crc ^ 0xA001) & 0x0000FFFF;
+            }
+        }
+        String str=Integer.toHexString(crc);
+        if(str.length()==3){
+            return "0"+str.toUpperCase();
+        }else if(str.length()==2){
+            return "00"+str.toUpperCase();
+        }else if(str.length()==1){
+            return "000"+str.toUpperCase();
+        }
+        return str.toUpperCase();
+    }
     public static void main( String[] args )
     {
         String  stmp = "QN=20160801085857223;ST=32;CN=1062;PW=100000;MN=010000A8900016F000169DC0;Flag=5;CP=&&RtdInterval=30&&";
-        System.out.println(calcCrc16(stmp));
+
+        System.out.println(crc16(stmp,stmp.length()));
         //  1C80
     }
 }

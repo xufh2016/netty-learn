@@ -94,6 +94,38 @@
         + 调用channel的write方法
         + 调用buffer自己的get方法
 
+##Netty基础
+1. Netty是什么  
+   netty是一个异步基于事件驱动的网络应用框架，用于快速开发可维护、高性能的网络服务器和客户端
+
+2. 组件  
+   * EventLoop  
+     本质是一个单线程执行器（同时维护了一个Selector），里面有run方法处理Channel上源源不断的IO事件
+3. Channel
+   * channel的主要作用  
+     + close()可以用来关闭channel
+     + closeFuture()用来处理channel的关闭
+       + sync方法作用是同步等待channel关闭
+       + 而addListener方法是异步等待channel关闭
+     + pipeline()方法添加处理器
+     + write()方法将数据写入
+     + writeAndFlush()方法将数据写入并刷出     
+
+
+###基础提示（关于netty流程的初始理解）
+* 把channel理解为数据的通道
+* 把msg理解为流动的数据，最开始输入是ByteBuf，但经过pipeline的加工，会变成其他类型对象，最后输出又变成ByteBuf
+* 把handler理解为数据的处理工序  
+  + 工序有多道，合在一起就是pipeline，pipeline负责发布事件（读、读取完成。。。）传播给每个handler，handler对自己感兴趣的  
+    事件进行处理（重写了相应事件处理方法）
+  + handler分Inbound和OutBound两类
+* 把EventLoop理解为处理数据的工人
+  + 工人可以管理多个channel的io操作，并且一旦工人负责了某个channel，就要负责到底（绑定）
+  + 工人既可以执行io操作，也可以进行任务处理，每位工人有任务队列，队列里可以堆放多个channel的待处理任务，任务分为
+    普通任务 、定时任务。
+  + 工人按照pipeline顺序，依次按照handler的规划（代码）处理数据，可以为每道工序指定不同的工人
+
+
 
 #关于协议
 
