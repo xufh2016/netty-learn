@@ -25,6 +25,13 @@ public class HelloServerHandler<NioSocketChannel> extends ChannelInboundHandlerA
         System.out.println("执行channelRead~~~~~~~~~~~~");
         System.out.println("---------------Server接收到来自客户端的消息-------------" + str);
 
+        channelGroup.forEach(item -> {
+            if (item != channel) {
+                item.writeAndFlush(item.remoteAddress() + "----send msg---" + str);
+            } else {
+                item.writeAndFlush("[self]----" + str);
+            }
+        });
 
         ctx.channel().writeAndFlush("-----------server says hi---------------------" + ctx.channel().remoteAddress());
 //                                            ByteBuf byteBuf = Unpooled.copiedBuffer("Hello , This is Server!!!", CharsetUtil.UTF_8);
@@ -48,7 +55,7 @@ public class HelloServerHandler<NioSocketChannel> extends ChannelInboundHandlerA
     //该方法表示通道已连接，连接好之后会自动回调
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         Channel channel = ctx.channel();
-        channelGroup.writeAndFlush("---------------------[Server]-"+channel.remoteAddress()+"----------join in----------");
+        channelGroup.writeAndFlush("---------------------[Server]-" + channel.remoteAddress() + "----------join in----------");
 
         channelGroup.add(channel);
         System.out.println("--------------channelActive------------");
@@ -56,15 +63,15 @@ public class HelloServerHandler<NioSocketChannel> extends ChannelInboundHandlerA
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        Channel channel = ctx.channel();
         System.out.println("----------channelInactive--------");
+        channelGroup.writeAndFlush("[Server]-" + channel.remoteAddress() + "-----left----");
+        channelGroup.remove(channel);
     }
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         System.out.println("---------------channelReadComplete--------------");
-        Channel channel = ctx.channel();
-        channelGroup.writeAndFlush("[Server]-"+channel.remoteAddress()+"-----left----");
-        channelGroup.remove(channel);
     }
 
     @Override
