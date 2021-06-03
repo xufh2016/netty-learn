@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677a86c2-6055-4957-8274-dab6a3d7c599" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/day1-netty/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="325">
-                <caret line="157" column="30" lean-forward="true" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
+              <first_editor relative-caret-position="4675">
+                <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,20 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            <state relative-caret-position="625">
+              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,10 +41,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java">
+        <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="600">
+              <caret line="24" column="66" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,10 +53,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/util/concurrent/GlobalEventExecutor.java">
+        <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="44" column="52" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="52" />
+            <state relative-caret-position="425">
+              <caret line="26" column="56" selection-start-line="25" selection-start-column="5" selection-end-line="26" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,11 +113,11 @@
         <option value="$PROJECT_DIR$/day1-netty/src/test/java/com/coolfish/day1netty/Day1NettyApplicationTests.java" />
         <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloClient.java" />
         <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/EventLoopServer.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/TestEventLoop.java" />
         <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServer.java" />
-        <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java" />
         <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java" />
+        <option value="$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -147,15 +138,14 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-151" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+    <option name="width" value="1551" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,6 +227,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,7 +236,7 @@
     <property name="MyBatisLogPluginrunning" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622431365685" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1622449283803" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -376,7 +367,13 @@
       <workItem from="1622248075899" duration="16595000" />
       <workItem from="1622277235743" duration="607000" />
       <workItem from="1622278097870" duration="712000" />
-      <workItem from="1622420293300" duration="6480000" />
+      <workItem from="1622420293300" duration="16710000" />
+      <workItem from="1622506562915" duration="6324000" />
+      <workItem from="1622592367032" duration="726000" />
+      <workItem from="1622597567754" duration="607000" />
+      <workItem from="1622600338943" duration="2040000" />
+      <workItem from="1622679490017" duration="2971000" />
+      <workItem from="1622696160444" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1621584491074</created>
@@ -429,13 +426,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67173000" />
+    <option name="totallyTimeSpent" value="90680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-151" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16176471" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10651828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -446,7 +443,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298887" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40620032" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41414943" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49125597" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -454,7 +451,43 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.35691574" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3298887" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3298887" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3298887" />
+      <window_info anchor="bottom" id="MyBatis Log" order="15" weight="0.3290938" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Json Parser" order="9" weight="0.16494435" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2727882" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40620032" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.13782991" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35691574" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3298887" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3298887" />
@@ -469,7 +502,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Json Parser" order="9" weight="0.15937997" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -613,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/channel/ChannelInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2015">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -649,6 +675,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/channel/ChannelInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-966">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/util/concurrent/GlobalEventExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/handler/codec/string/StringEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Program Files/Java/jdk1.8.0_231/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="270" column="22" selection-start-line="270" selection-start-column="22" selection-end-line="270" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4675">
+            <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="56" selection-start-line="25" selection-start-column="5" selection-end-line="26" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/EventLoopServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -669,54 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="325">
-            <caret line="157" column="30" lean-forward="true" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.63.Final/netty-all-4.1.63.Final-sources.jar!/io/netty/util/concurrent/GlobalEventExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="44" column="52" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day1-netty/src/main/java/com/coolfish/day1netty/day1/HelloServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="600">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

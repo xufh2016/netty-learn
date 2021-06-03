@@ -5,7 +5,10 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
-import io.netty.util.CharsetUtil;
+import io.netty.handler.timeout.IdleStateHandler;
+
+import java.nio.charset.Charset;
+import java.util.concurrent.TimeUnit;
 
 public class HelloServerInitializer<NioSocketChannel> extends ChannelInitializer {
 
@@ -16,8 +19,11 @@ public class HelloServerInitializer<NioSocketChannel> extends ChannelInitializer
         //6、添加具体handler,注意一点，addLast中的对象不要搞成单例，需要多实例
 //                                    pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
 //                                    pipeline.addLast(new LengthFieldPrepender(4));
-        pipeline.addLast(new StringDecoder(CharsetUtil.UTF_8));//StringDecoder将ByteBuf转换为字符串,解码器，客户端向服务器端传输数据时需要编码器，
-        pipeline.addLast(new StringEncoder(CharsetUtil.UTF_8));
+//        pipeline.addLast(new StringDecoder(CharsetUtil.UTF_8));//StringDecoder将ByteBuf转换为字符串,解码器，客户端向服务器端传输数据时需要编码器，
+//        pipeline.addLast(new StringEncoder(CharsetUtil.UTF_8));
+        pipeline.addLast(new StringEncoder(Charset.forName("GB2312")));
+        pipeline.addLast(new StringDecoder(Charset.forName("GB2312")));
+        pipeline.addLast(new IdleStateHandler(10, 10, 10, TimeUnit.MINUTES));//心跳检测
         // 当服务器端收到数据后需要使用解码器进行解码。
         pipeline.addLast(new HelloServerHandler<NioSocketChannel>());
     }

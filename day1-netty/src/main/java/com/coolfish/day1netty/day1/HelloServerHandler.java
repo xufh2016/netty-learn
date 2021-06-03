@@ -5,6 +5,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
+import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 import java.io.UnsupportedEncodingException;
@@ -12,6 +13,7 @@ import java.net.SocketAddress;
 
 public class HelloServerHandler<NioSocketChannel> extends ChannelInboundHandlerAdapter {
     private static ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+
 
     @Override
     //读事件
@@ -41,10 +43,12 @@ public class HelloServerHandler<NioSocketChannel> extends ChannelInboundHandlerA
 //                                            ctx.writeAndFlush(response);
     }
 
+
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
         System.out.println("------------------channelRegistered---------");
     }
+
 
     @Override
     public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
@@ -81,6 +85,22 @@ public class HelloServerHandler<NioSocketChannel> extends ChannelInboundHandlerA
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        if (evt instanceof IdleStateEvent) {
+            IdleStateEvent event = (IdleStateEvent) evt;
+            String eventType = null;
+            switch (event.state()) {
+                case ALL_IDLE:
+                    eventType = "ALL_IDLE";
+                    break;
+                case READER_IDLE:
+                    eventType = "READER_IDLE";
+                    break;
+                case WRITER_IDLE:
+                    eventType = "WRITER_IDLE";
+                    break;
+            }
+            ctx.channel().close();
+        }
         System.out.println("---------------userEventTriggered--------------");
     }
 
