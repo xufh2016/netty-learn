@@ -193,3 +193,22 @@
 
 
 
+##基础知识补充：
+1. 格式化日期
+   ```java
+    //Date类型转String类型
+    String date = DateFormatUtils.format(new Date(),"yyyy-MM-dd HH:mm:ss");
+    //String类型转Date类型
+    Date date = DateUtils.parseDate("2021-05-01 01:01:01", "yyyy-MM-dd HH:mm:ss");
+    // 计算一个小时后的日期
+    Date date = DateUtils.addHours(new Date(), 1);
+    
+   ```
+
+
+2. 文件中的魔术数字
+   * 通过对后缀名的判断只能够简单的验证文件,如果用户恶意更改了文件的后缀名,这种判断就不起作用了.
+     所以还需要对文件的字节进行验证,每一个文件都有自己的魔术数字.也就是在一个文件的开头部分的字节码,
+     用winhex-19.8(下载下来之后有个木马文件,删除掉就可以,不影响使用)查看一个文件的字节码,
+     就能够知道该类型文件的魔术数字.通过判断魔术数字,就能够起到验证文件的作用.
+

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/day02/day02.iml" filepath="$PROJECT_DIR$/day02/day02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day1-netty/day1-netty.iml" filepath="$PROJECT_DIR$/day1-netty/day1-netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/netty-learn.iml" filepath="$PROJECT_DIR$/.idea/netty-learn.iml" />
     </modules>
