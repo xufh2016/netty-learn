@@ -19,7 +19,7 @@ public class WebSocketServer {
                     .group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(new FishWebsocketChannelHandler())
+                    .childHandler(new FishChannelInitialezer())
                     .bind(8899).sync();
             channelFuture.channel().closeFuture().sync();
         } catch (InterruptedException e) {
